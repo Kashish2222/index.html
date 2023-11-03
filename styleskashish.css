@@ -1,0 +1,182 @@
+/*MOBILE FIRST APPROACH:
+  Every styles below is for SMALL DEVICES (smartphones)
+  screen width <= 425px
+*/
+
+
+body {
+	background-color: white;
+	font-family: "Times New Roman", serif;
+}
+
+* {/*star symbol means all HTML tags*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 10;
+}
+
+/*-----------------------*/
+nav {
+	min-height: 5vh;
+	background-image: linear-gradient( white );	
+	/*Flex box*/
+	display: flex;
+	flex-direction: row;
+}
+ nav a {
+	flex: 9; 	
+	font-size: 2.0em;
+    word-spacing: 0em;
+	text-align:Center;
+box-sizing:15vh;
+position:100%;
+}
+
+
+header {
+	height: 20vh;
+	background-color: pink;
+	text-align: center;
+	font-size: 120%;
+}
+
+/*---*/
+main {
+	height: 3vh;
+    min-height: 90vh;
+	background-color: white;
+	text-align: center;
+	
+}
+
+
+
+
+main section img { 
+    height:10vh;
+	width: auto;
+    border: 5px solid black;
+}
+
+
+main p{
+	font-size: 3vh;
+	text-align: right ;
+}
+  main a img {
+	  height: 10vh;
+	  width: auto;
+	  text-align: left;
+  }
+
+/*----------------------------*/
+footer {
+	height: 12vh;
+	background-image: linear-gradient(blue);
+	background-color: blue;
+	/*Centralize the content both vertically and horizontally*/
+	display: flex;
+	justify-content: Center;
+	align-items: Center;
+	word-spacing: 9.0em;
+	
+}
+footer p {
+	margin: 10;
+	font-size: 2vh;
+	font-weight: bold;
+	text-align: Center;
+     color: black;
+	}
+/*------------------------*/
+/*Styles changes for MEDIUM DEVICES: iPads or Tablets
+  screen width: 426 px -> 768px 
+*/
+@media only screen and (min-width: 426px) {
+	 nav Button {
+        font-size:150%;
+		
+	 }
+	
+	main section img{
+		height:15vh;
+	width: auto;
+	font-weight: bold;
+	border:5px solid black;
+	}
+	header{
+		
+		text-align: center;
+	font-size: 175%;
+}
+	}
+	body {
+		background-color: white;
+	
+	
+	}
+
+	
+	
+	footer {
+		background-color: blue;
+	}
+	footer a {
+	margin: 10;
+	font-size: 5vh;
+	font-weight: bold;
+	text-align: Center;
+	color: black;
+   
+	}
+
+	
+}
+
+
+
+/*------------------------*/
+/*Styles changes for BIG DEVICES: PC or desktops
+  screen width: >= 769px 
+*/
+@media only screen and (min-width: 769px) {
+	
+	
+	
+	nav Button {
+        font-size:220%;
+		
+	 }
+	main section img{
+		height:25vh;
+	width: auto;
+	border:3px solid black;
+	font-weight: bold;
+	}
+	main div{
+		font-weight: bold;
+	}
+	header{
+		
+		text-align: center;
+	font-size: 400%;
+}
+	}
+	body {
+		background-color: white;
+	}
+
+    footer {
+		background-color: blue;
+		word-spacing: 29.0em;
+		
+	}
+	footer p {
+	margin: 10%;
+	font-size: 4vh;
+	font-weight: bold;
+	text-align: Center;
+	color: black;
+   
+	}
+}
